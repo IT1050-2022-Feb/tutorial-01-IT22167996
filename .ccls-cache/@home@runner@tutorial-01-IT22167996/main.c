@@ -8,7 +8,7 @@ e.g.
 n -> 100
 sum = 1+2+3+....+ 99+100 = 5050
 
-n -> 10
+n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
 // preprocessor directives
@@ -17,24 +17,22 @@ sum = 1+2+3+...+10 = 55 */
 // main function
 int main() {
   // variables
-  int i, n, total = 0;
+  int n, total, x = 1;
   
   // taking input for 'n'
   printf("n -> ");
   scanf("%d", &n);
 
   printf("sum = ");
-
+  
+  // loop to keep the program running till it stops when needed
+  do {
+    total += x;
+    printf("+%d", x);
+    x++;
+  } while (n >= x);
+  
   // displaying the output
-  printf("sum = ");
-  for (i = 1; i <= n; i++) {
-      total += i;
-      printf("%d", i);
-
-      if (i != n) {
-          printf("+");
-      }
-  }
   printf(" = %d\n", total);
   
   // signifying successful program execution
