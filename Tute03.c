@@ -23,8 +23,6 @@ int main() {
   printf("n -> ");
   scanf("%d", &n);
 
-  printf("sum = ");
-
   // displaying the output
   printf("sum = ");
   for (i = 1; i <= n; i++) {
